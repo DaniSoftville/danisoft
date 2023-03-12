@@ -2,7 +2,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 import { setCredentials } from "../../features/auth/authSlice";
 
 const baseQuery = fetchBaseQuery({
-  baseUrl: "https://danisoft.onrender.com",
+  baseUrl: "https://danisoft-api.onrender.com",
   credentials: "include", //This way we'll always send our cookie
   prepareHeaders: (headers, { getState }) => {
     // Available to the fetchBaseQuery, pass the headers and destructure the api getState
